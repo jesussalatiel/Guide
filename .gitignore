@@ -1,0 +1,4 @@
+Docker/target
+Docker/test-output
+.classpath
+.project
