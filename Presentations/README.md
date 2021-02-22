@@ -28,3 +28,9 @@ Please make sure to update tests as appropriate.
 
 ## Github
 [Github](https://git-scm.com/book/en/v2)
+
+## Azure Test Plans
+[Azure Test Plans](https://azure.microsoft.com/es-mx/services/devops/test-plans/)
+
+## Performance Test
+[Performance Test](https://azure.microsoft.com/es-es/blog/performance-testing-with-app-service-continuous-deployment/)
