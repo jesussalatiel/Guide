@@ -16,6 +16,8 @@ It's importantto become familiar with SOLID Principles that help make software d
 4. The Interface Segregation Principle - Make fine grained interfaces that are client-specific.
 5. The Dependency Inversion Principle - Depend on abstractions, not on concretions.
 
+Some automation Design Patterns
+
 * POM
 * Facade: Is mostly used to combine a few page objects/actions and provide uniform actions for consumers, For example, when a complex API needs to be executed in a specific order, create a facade for the designated functionality and provide a simplified interface for operating.
 * Decorator 
