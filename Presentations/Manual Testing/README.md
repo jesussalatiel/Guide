@@ -37,6 +37,10 @@ Helping us reduce the risk of failures during the operation with this we can inc
 
 ## Gestion de Riesgos
 
+## Tipos de Pruebas 
+### Dinamicas
+### Estaticas
+
 ## Ciclo de Vida de los Defectos
 
 ## Estrategia de Prueba 
@@ -45,8 +49,23 @@ Helping us reduce the risk of failures during the operation with this we can inc
 
 ## Artefactos durante la vida de desarrollo del software
 
+## TDD: Test Driven Development
+Although TDD is a development technique, it can also be used for automation testing development
 
+## BDD: Behavior Driven Development 
+Is considered a best practice when it comes to automated testing as ait focuses on the behavior of the application and not on thinking about the implementation of the code 
 
+# INVEST 
+Is a widely accepted set of criteria, or checklist, to asssess the quality of a user story, A good user story should be:
+- I: Independent  
+- N: Negotiable
+- V: Valuable
+- E: Estimable
+- S: Small
+- T: Testeable
+
+# Data Pooling 
+Is a process where data sets coming from different sources are combined.
 # Acronyms
 - ALM: Aplication Lifecycle Management
 - ATDD: Acceptance Test Driven Development

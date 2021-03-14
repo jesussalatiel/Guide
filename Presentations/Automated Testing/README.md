@@ -1,5 +1,28 @@
 # Topics pendients to learn 
 
+# Automation Testing Design Pattern 
+[Design Patterns Important](https://www.devbridge.com/articles/top-design-pattern-test-automation-frameworks/)
+Is simply a solution that has shown to be successful again and again. Design patterns provide a general reusable solution for the common problems that occur on software design. Design Patterns are like collections 
+of best practices as they provide a concept. Design patterns help reduce code complexity - as well as make code more extensible, and maintanable.
+
+* Structural Patterns: Explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+* Creation Patterns: Provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+* Behavioral Patterns: Are concerned with algorithms and tge assignment of responsabilities between objects
+
+It's importantto become familiar with SOLID Principles that help make software design more understandable, flexible and maintanable.
+1. The Single Responsibility Principle - A class should have one, and only one reason to change.
+2. The Open Closed Principle - You should be able to extend a class behavior without modifying it.
+3. The Liskov Substitution Principle - Derived classes must be substitutable for its base classes.
+4. The Interface Segregation Principle - Make fine grained interfaces that are client-specific.
+5. The Dependency Inversion Principle - Depend on abstractions, not on concretions.
+
+* POM
+* Facade: Is mostly used to combine a few page objects/actions and provide uniform actions for consumers, For example, when a complex API needs to be executed in a specific order, create a facade for the designated functionality and provide a simplified interface for operating.
+* Decorator 
+* Singleton
+
+
+
 ## Java OPP
 [Java](https://beginnersbook.com/2013/04/oops-concepts/)
 ## Cucumber
@@ -34,3 +57,6 @@ Please make sure to update tests as appropriate.
 
 ## Performance Test
 [Performance Test](https://azure.microsoft.com/es-es/blog/performance-testing-with-app-service-continuous-deployment/)
+
+## JIRA
+# Xray Test Management 
