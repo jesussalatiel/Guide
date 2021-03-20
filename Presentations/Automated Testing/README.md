@@ -62,3 +62,27 @@ Please make sure to update tests as appropriate.
 
 ## JIRA
 # Xray Test Management 
+
+
+
+
+
+## XPath
+[Tutorial](https://www.youtube.com/watch?v=NhG__BL8zFo)
+- //table[@id='table1']//tr[last()-4]/td[input]
+- //label//a[span[@id='link']]
+- (//label[@id='lable'])[1]
+- //p[normalize-space(text()) = 'Tommy']
+- //p[string-length(text())<30]
+- //td[round(text())='7']
+- //input[@type='radio' and not(@id='gender-0')]
+
+
+## Xpath AXES
+-  //div[@id='Y2']/parent::div
+- //div[@id='Y2']//ancestor::div[@id='A'] 
+- //div[@id='B2']/child::div[1]
+- //div[@id='B2']/descendant::div[@id='Y3']
+- //div[@id='B2']/following::input[1]
+- //div[@id='B2']/following-sibling :: *
+- //label[text()='Name']/following-sibling::div/input
