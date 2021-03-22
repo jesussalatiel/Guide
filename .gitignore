@@ -1,6 +1,8 @@
-Practices/Automation/Cucumber/test-output/
-Practices/Automation/Cucumber/.settings/
+Presentations/Automated Testing/Cucumber/test-output/
+Presentations/Automated Testing/Cucumber/.settings/
 Docker/target
 Docker/test-output
 .classpath
 .project
+Presentations/Performance Testing/KarateFramework/.settings/
+Presentations/Performance Testing/RestAssured/.settings/
