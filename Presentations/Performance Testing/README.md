@@ -13,17 +13,19 @@ Es un framework escrito en Java y diseñado para simplificar las priebas sobre s
 - Codificado en Java e integrable con librerias como JUnit, TestNG o Maven.
 -Es posible ejecutar pruebas automatizadas de UI y no requiere herramientas externas para ejecutarse.
 
-(Reference)[https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured]
+[Reference](https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured)
 # Gherkin
-[Documentation](https://cucumber.io/docs/gherkin/reference/)
 Describe business behavior without goig into detail of implementation. It uses plain language to describe uses cases and allows users to remove logic details from behavior test. A gherkin document has an extension ".feature" and simply just a test file with a fancy extension. Cucumber reads Gherkins document and executes a test to validate that the software behaves as per the Gherkin syntax.
 
 The primary keywords are:
-- Feature
-- Rule
-- Example or Scenario
-- Given, When, Then, And, But
-- Background
+- Feature: The file should have extension ".feature" and each feature file should have only one feature.
+- Rule: Represent one bussines rule that should be implemented. It provides additional information for a feature.
+- Example or Scenario: Each feature file may have multiple scenarios, and each scenario start with Scenario: followed by scenario name.
+- Given: The use of Given keyword is to put the system in a familira state before the users starts interating with the system.
+- When: The step is to define action performed by the user.
+- Then: The use of 'then' is to see the outcome after the action in when step-
+- And & But: You may have multiple given when or then 
+- Background: Help to add some context to the scenario. It can contain some steps of the scenario, but the only difference is that it should be run before each scenario.
 - Scenario Outline or Scenario Template
 
 There are a few secondary keywords as well:
@@ -31,4 +33,36 @@ There are a few secondary keywords as well:
 - '|' -> Data Tables
 - '@' -> Tags
 - '#' Comments
+
+## Example
+```feature
+Feature: Login functionality of social networking site Facebook.
+Given: I am a facebook user.
+When: I enter username as username.
+And: I enter the password as the password
+Then: I should be redirected to the home page pf facebook.
+```
+[Documentation](https://cucumber.io/docs/gherkin/reference/)
+
 # Karate
+Karate is the only open-source tool to combine API test-automation, mocks, performance testing and even UI automation into a single, unified framework. The BDD syntax popularized by Cucumber is language neutral. Assertions and HTML reports are built-in, and you can run test in parallel for speed. You don't have to compile code. Just write tests in a simple, readable syntax carefully designed for HTTP, JSON, GraphQL and XML. A Java API also exist for those who prefer to programmatically integrate Karate's rich automation and data assertion capabilities.
+
+Keywords:
+- match ==
+- match !=
+- match contains, match contains only, match contains any y match !contains
+
+Comprobaciones Generucas
+- @ignore:      Ignora el campo.
+- @null:           El valor debe ser nulo.
+- @notnull:    El valor no debe ser nulo.
+- @array:        El valor debe ser una matriz JSON.
+- @object:       El valor debe ser un objeto JSON.
+- @boolean:   El valor debe ser verdadero o falso.
+- @number:   El valor debe ser un número.
+- @string:       El valor debe ser una cadena.
+- @uuid:          El valor debe coincidir con el formato UUID.
+- @regex:        El valor coincide con una expresión regular.
+- @? EX:          La expresión de Javascript EX debe evaluarse como verdadera.
+
+[Documentation](https://github.com/intuit/karate)
