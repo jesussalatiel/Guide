@@ -1,36 +1,34 @@
-# Topics pendients to learn 
+# Performance Testing
+- API: Conjunto de funciones y procedimientos que cumplen una serie de funciones con el fin de ser usados por otro software añadiendoles una capa de abstraccion.
+- WebServices API: Son APIs a las cuales solo se puede acceder por medio de internet. Normalmente bajo el protocolo HTTP/S.
+- HTTP: Es un protocolo de comunicación que permite la transferencia de información a través de internet.
+- REST: Es un sistema nuevo lanzado como protocolo de intercambio y manipulacion de datos en los servicios de Internet que utiliza HTTP. Es diseñado para ser rápido tanto en el desarrollo como en su adopción.
+- Es cualquier servicio weo o WebServices API que esta basado en Rest y que, ademas, accede a recursos usando enteramente el protocolo HTTP.
 
-## Java OPP
-[Java](https://beginnersbook.com/2013/04/oops-concepts/)
-## Cucumber
-[Cucumber](https://cucumber.io/)
-## Jenkins
-[Jenkins](https://github.com/hoto/jenkinsfile-examples)
-## UFT
-[UFT](https://www.guru99.com/quick-test-professional-qtp-tutorial.html)
-## APPIUM
-[Appium](https://www.guru99.com/introduction-to-appium.html) 
-## JMetter
-[Jmetter](https://cwiki.apache.org/confluence/display/JMETER/Home)
-## SoapUI 
-[SoapUI](https://www.soapui.org/getting-started/soap-test/)
-## Postman
-[Postman](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)
-## Design Patterns
-[Design Patterns](https://github.com/ksatria/MK-Design-Pattern/blob/master/Ebook/Head%20First%20Design%20Patterns.pdf)
-## Yarn
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
-## Groovy
-[Groovy](https://groovy-lang.org/) is a powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax. It integrates smoothly with any Java program, and immediately delivers to your application powerful features, including scripting capabilities, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming
-## Katalon
-[Katalon](https://medium.com/katalon-studio/a-sample-web-automation-test-project-9c532237c2bd)
+# REST Assured
+Es un framework escrito en Java y diseñado para simplificar las priebas sobre servicios basados en REST. Ofrece un DSL descriptivo, que muestra una unión a un punto de conexion HTTP y da los resultados esperados. Este framework soporta las operaciones POST, GET, PUT, DELETE, OPTIONS, PATCH y HEAD, contiene herramientas para invocarlas y verificarlas.
 
-## Github
-[Github](https://git-scm.com/book/en/v2)
+- Se puede comprobar el estado del código, del mensaje e incluso, se puede ver el cuerpo de la respuesta. Ademas resulta muy facil concatenar llamadas y en todo momento se tiene el control del codigo.
+- Son faciles de integrar con pruebas de todo tipo: funcionales, unitarias. integradas, etc.
+- Codificado en Java e integrable con librerias como JUnit, TestNG o Maven.
+-Es posible ejecutar pruebas automatizadas de UI y no requiere herramientas externas para ejecutarse.
 
-## Azure Test Plans
-[Azure Test Plans](https://azure.microsoft.com/es-mx/services/devops/test-plans/)
+(Reference)[https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured]
+# Gherkin
+[Documentation](https://cucumber.io/docs/gherkin/reference/)
+Describe business behavior without goig into detail of implementation. It uses plain language to describe uses cases and allows users to remove logic details from behavior test. A gherkin document has an extension ".feature" and simply just a test file with a fancy extension. Cucumber reads Gherkins document and executes a test to validate that the software behaves as per the Gherkin syntax.
 
-## Performance Test
-[Performance Test](https://azure.microsoft.com/es-es/blog/performance-testing-with-app-service-continuous-deployment/)
+The primary keywords are:
+- Feature
+- Rule
+- Example or Scenario
+- Given, When, Then, And, But
+- Background
+- Scenario Outline or Scenario Template
+
+There are a few secondary keywords as well:
+- """ -> Doc Strings
+- '|' -> Data Tables
+- '@' -> Tags
+- '#' Comments
+# Karate
