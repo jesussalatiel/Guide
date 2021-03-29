@@ -53,7 +53,7 @@ Keywords:
 - match contains, match contains only, match contains any y match !contains
 
 Comprobaciones Generucas
-- @ignore:      Ignora el campo.
+- @ :      Ignora el campo.
 - @null:           El valor debe ser nulo.
 - @notnull:    El valor no debe ser nulo.
 - @array:        El valor debe ser una matriz JSON.
@@ -65,4 +65,25 @@ Comprobaciones Generucas
 - @regex:        El valor coincide con una expresión regular.
 - @? EX:          La expresión de Javascript EX debe evaluarse como verdadera.
 
+- tags = {“@SmokeTest”} Ejecuta todos los escenarios bajo el tag @SmokeTest
+
+- tags = {“@gui”} Ejecuta todos los escenarios bajo el tag @gui, como en el ejemplo tenemos una feature bajo este tag, se ejecutarán todos los escenarios de esa feature.
+
+- tags = {“@SmokeTest, @wip”} Ejecuta todos los escenarios que estén bajo el tag @SmokeTest o bajo el tag @wip (condición OR).
+
+- tags = {“@SmokeTest”, “@RegressionTest”} Ejecuta todos los escenarios que estén bajo los tags @SmokeTest y @RegressionTest (condición AND).
+
+- tags = {“~@SmokeTest”} ignora todos los escenarios bajo el tag @SmokeTest
+
+- tags = {“@RegressionTest, ~@SmokeTest”} ejecuta todos los escenarios bajo el tag @RegressionTest, pero ignora todos los escenarios bajo el tag @SmokeTest
+
+- tags = {“@gui“, “~@SmokeTest”, “~@RegressionTest”} ignora todos los escenarios bajo el tag @SmokeTest y @RegressionTest pero ejecuta todos los que estén bajo el tag “@gui”, si seguimos el ejemplo es como ejecutar todos los escenarios de la feature que no estén bajo ningún otro tag.
+
 [Documentation](https://github.com/intuit/karate)
+[Documentation](https://www.sngular.com/es/automatizacion-de-pruebas-con-karate-i/)
+
+[Good Practices](https://www.federico-toledo.com/buenas-practicas-de-cucumber/)
+
+[Mistakes Gherkin](https://www.spritecloud.com/the-3-most-common-mistakes-writing-gherkin-features/)
+# BDD
+Es una estrategia de desarrollo, cucumber "obliga" a documentar las pruebas automatizadas antes de implementarlas. Esto es fundamental para los test tal que se tienen que hacer legibles y claros para el usuario que a priori no conozca el comportamiento de la funcionalidad que se describe y mas mantenibles para reducir los costos de hacer modificaciones en los de los test. Estos scripts "feature" se deben o es recomendado redactarlos en primera persona "Como usuario [tipo de usuario] quiero [accion] para [resultado]"
