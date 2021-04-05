@@ -87,3 +87,8 @@ Comprobaciones Generucas
 [Mistakes Gherkin](https://www.spritecloud.com/the-3-most-common-mistakes-writing-gherkin-features/)
 # BDD
 Es una estrategia de desarrollo, cucumber "obliga" a documentar las pruebas automatizadas antes de implementarlas. Esto es fundamental para los test tal que se tienen que hacer legibles y claros para el usuario que a priori no conozca el comportamiento de la funcionalidad que se describe y mas mantenibles para reducir los costos de hacer modificaciones en los de los test. Estos scripts "feature" se deben o es recomendado redactarlos en primera persona "Como usuario [tipo de usuario] quiero [accion] para [resultado]"
+
+[Custom Functions using Java and Javascript in Karate](https://tech.trivago.com/2019/11/14/automation-first-approach-using-the-karate-api-testing-framework/)
+
+
+[](https://www.udemy.com/course/a4q-selenium-practice-exam-foundation-eng/)

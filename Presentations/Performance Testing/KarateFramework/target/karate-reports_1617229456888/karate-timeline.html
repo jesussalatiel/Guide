@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"demo\/varDetails[1:14]","start":1617229339654,"end":1617229339654,"title":"demo\/varDetails[1:14] 16:22:19.654-16:22:19.654 Capture today date"},{"id":2,"group":1,"content":"demo\/userDetails[1.1:15]","start":1617229334897,"end":1617229336548,"title":"demo\/userDetails[1.1:15] 16:22:14.897-16:22:16.548 Get Call for User Details"},{"id":3,"group":1,"content":"demo\/userDetails[1.2:16]","start":1617229336570,"end":1617229336703,"title":"demo\/userDetails[1.2:16] 16:22:16.570-16:22:16.703 Get Call for User Details"},{"id":4,"group":1,"content":"demo\/userDetails[1.3:17]","start":1617229336717,"end":1617229337034,"title":"demo\/userDetails[1.3:17] 16:22:16.717-16:22:17.034 Get Call for User Details"},{"id":5,"group":1,"content":"demo\/userDetailsPost[1:3]","start":1617229338800,"end":1617229339400,"title":"demo\/userDetailsPost[1:3] 16:22:18.800-16:22:19.400 testing the POST call for User Creation"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
