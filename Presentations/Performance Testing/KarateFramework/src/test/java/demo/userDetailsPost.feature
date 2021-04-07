@@ -1,3 +1,4 @@
+@regression
 Feature: Posting User Details
 
   Scenario: testing the POST call for User Creation
