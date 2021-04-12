@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-04-06 03:27:07 PM</div>
+    <div>2021-04-12 01:34:38 pm</div>
   </div>        
 </div>
 
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>340</span>
+              <span>ms:</span>&nbsp;<span>86</span>
             </div>
           </div>
           <div class="step-row">
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>def greeter = function(title, name){return &#39;Hello &#39; + title+ &#39; &#39; + name }</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -113,7 +113,7 @@
         <span>*</span>&nbsp;<span>def user = {name: &#39;Salatiel&#39;, age: 2}</span>
       </div>
     </div>
-    <div class="time-cell passed">128</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -141,7 +141,7 @@
         <span>And</span>&nbsp;<span>def lang = &#39;es&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -169,7 +169,7 @@
         <span>*</span>&nbsp;<span>def embedded = {name: &#39;#(user.name)&#39;, age:&#39;#(user.age)&#39;, lang: &#39;#(lang)&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -197,7 +197,7 @@
         <span>*</span>&nbsp;<span>print embedded</span>
       </div>
     </div>
-    <div class="time-cell passed">45</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -206,7 +206,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">15:27:07.709 [print] {
+  <div class="preformatted" data-parent="0.12">13:34:38.631 [print] {
   &quot;name&quot;: &quot;Salatiel&quot;,
   &quot;age&quot;: 2,
   &quot;lang&quot;: &quot;es&quot;
@@ -231,7 +231,7 @@
         <span>*</span>&nbsp;<span>match greeter(&#39;Mr&#39;, &#39;Salatiel&#39;) == &#39;Hello Mr Salatiel&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -259,7 +259,7 @@
         <span>*</span>&nbsp;<span>match greeter(&#39;Mr&#39;, &#39;Salatiel&#39;) != &#39;Hello Mr Salatiel.&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -287,7 +287,7 @@
         <span>*</span>&nbsp;<span>def cat = {name: &#39;&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -315,7 +315,7 @@
         <span>*</span>&nbsp;<span>set cat</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">4</div>
   </div>
 
   <table>
@@ -356,7 +356,7 @@
         <span>*</span>&nbsp;<span>match cat == {name: &#39;Lucky&#39;, age:16}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -384,7 +384,7 @@
         <span>*</span>&nbsp;<span>set drinks</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">15</div>
   </div>
 
   <table>
@@ -428,7 +428,7 @@
         <span>*</span>&nbsp;<span>print drinks</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -437,7 +437,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.25">15:27:07.781 [print] [
+  <div class="preformatted" data-parent="0.25">13:34:38.659 [print] [
   {
     &quot;type&quot;: &quot;beer&quot;,
     &quot;snack&quot;: &quot;Popcorn&quot;
@@ -467,7 +467,7 @@
         <span>*</span>&nbsp;<span>match drinks == [{type: &#39;#(drinks.type)&#39;, snack: &#39;#(drinks.snack)&#39; }, {type: &#39;#(drinks.type)&#39;, snack: &#39;#(drinks.snack)&#39;}]</span>
       </div>
     </div>
-    <div class="time-cell failed">20</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -476,7 +476,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.26">15:27:07.801 classpath:demo/varDetails.feature:26
+  <div class="preformatted" data-parent="0.26">13:34:38.665 classpath:demo/varDetails.feature:26
 * match drinks == [{type: &#39;#(drinks.type)&#39;, snack: &#39;#(drinks.snack)&#39; }, {type: &#39;#(drinks.type)&#39;, snack: &#39;#(drinks.snack)&#39;}]
 match failed: EQUALS
   $ | not equal | array match failed at index 0 (LIST:LIST)

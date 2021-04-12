@@ -5,8 +5,7 @@ import com.intuit.karate.junit5.Karate;
 public class DemoRunner {
 
 	@Karate.Test
-	Karate testTags() {
-		return Karate.run("arrayPractice").tags("@second").relativeTo(getClass());
+	Karate leartTest() {
+		return Karate.run("search").relativeTo(getClass());
 	}
-
 }

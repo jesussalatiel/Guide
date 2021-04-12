@@ -92,3 +92,5 @@ Es una estrategia de desarrollo, cucumber "obliga" a documentar las pruebas auto
 
 
 [](https://www.udemy.com/course/a4q-selenium-practice-exam-foundation-eng/)
+
+[Creator Karate Test](https://hackernoon.com/the-world-needs-an-alternative-to-selenium-so-we-built-one-zrk3j3nyr)
