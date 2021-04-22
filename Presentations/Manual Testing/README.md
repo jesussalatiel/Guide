@@ -45,14 +45,14 @@ Las causas raiz de los defectos son las acciones o condiciones mas tempranas que
 7. La ausencia de errores es una falacia
 
 ## Actividades y Tares de Prueba
-Un proceso de prueba consiste en los siguientes grupos de actividades principales:
+Un proceso de prueba consiste en los siguientes grupos de actividades principales (6):
 
-* Planificacion de la prueba 
-* Monitorizacion y control de la prueba
-* Analisis de la prueba
-* Diseño de la prueba 
-* Implementacion de la prueba
-* Finalizacion de la prueba
+1. Planificacion de la prueba 
+2. Monitorizacion y control de la prueba
+3. Analisis de la prueba
+4. Diseño de la prueba 
+5. Implementacion de la prueba
+6. Finalizacion de la prueba
 
 Estas actividades pueden variar de un proyecto a otro y son compuestas por multiples tareas individuales. A menudo estas tareas son implementadas de manera interativa 
 
@@ -64,6 +64,7 @@ La monitorizacion o seguimiento de la prueba es la comparacion continua del avan
 
 ## Analisis de la prueba
 En esta fase se determina que debemos de probar con ello definir las condiciones de prueba asociadas y definir terminos de prueba medibles.
+**Esta fase responde a la pregunta "que probar"**
 Algunas cosas a tomar en cuenta son:
 1. Requisitos de negocio
 2. Requisitos Funcionales
@@ -78,8 +79,42 @@ Esta aplicacion de analisis de prueba en algunos casos produce condiciones de pr
 Estas actividades de analisis no solo verifican si los requisitos son consistentes, debidamente expresados y son completos, sino que tambien validan si los requisitos satisfacen adecuadamente la necesidad del cliente, usuarios, y otros implicados
 
 ## Diseño de Prueba
+Durante esta fase las condiciones de prueba se transforman en casos de prueba de alto nivel.
+**Esta fase responde a la pregunta "como probar"**
+El diseño de la prueba incluye las siguientes actividades:
+- Diseñar y priorizar casos de prueba
+- Identificar los datos de prueba necesaios 
+- Diseñar el entorno de prueba e identificar la infraestructura y herramientas necesarias
 
+Esta fase se hace uso de el uso de ***tecnicas de prueba***
 
+## Implementacion de la Prueba
+En esta fase se crean y/o complementan los productos de prueba necesarios para la ejecucion de la prueba
+**Responde a la pregunta ¿esta todo preparado para realizar la prueba?**
+La implementacion de la prueba incluye las siguientes actividades:
+1. Desarrollar y Priorizar procedimientos de prueba
+2. Crear conjuntos de prueba
+3. Organizar los conjuntos de prueba dentro de un calendario de ejecucion 
+4. Construir entorno de prueba (virtualizacion de servicios, simuladores y otros elementos de infraestructura)
+5. Preparar datos de prueba y asegurarse de que esten correctamente cargados en el entorno de prueba
+
+## Ejecucion de la prueba
+Durante esta fase el conjunto de pruebas se ejecutar de acuerdo al calendario de ejecucion.
+Esta ejecucion incluye las siguientes actividades:
+1. Registrar los identificadores y las versiones de los elementos u objetos de prueba
+2. Ejecutar pruebas de forma manual o utilizar herraminetas de ejecucion de pruebas
+3. Comparar los resultados reales con los resultados esperados
+4. Analizar las anomalias para establecer causas probables(por ejemplo, defectos de codigo o falsos positivos)
+5. Informar los defectos encontrados
+6. Registrar el estatus de ejecucion (pass, failed, bloqueada)
+7. realizar pruebas de regresion a modulos afectados para asegurar el funcionamiento
+
+## Completado de la Prueba
+En esta fase se recopilan datos de las actividades de prueba realizada para consolidar la experiencia o otra experiencia importante con estos datos en un marco Agil podemos mostrarlos ocmo una junta retroespectiva.
+Actividades Principales:
+1. Crear un reporte de prueba en el cual se agregan todos los informes de defecto.
+2. Finalizar, guardar el entorno de prueba, los datos de prueba y la infraestructura para una posterior prueba de regresion
+ 
 ## Tecnicas de Diseño de Software
 
 ## Gestion de Riesgos
