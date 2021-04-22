@@ -5,13 +5,45 @@
 - REST: Es un sistema nuevo lanzado como protocolo de intercambio y manipulacion de datos en los servicios de Internet que utiliza HTTP. Es diseñado para ser rápido tanto en el desarrollo como en su adopción.
 - Es cualquier servicio weo o WebServices API que esta basado en Rest y que, ademas, accede a recursos usando enteramente el protocolo HTTP.
 
+## Metodos de peticion HTTP
+- GET: Solicita informacion 
+- HEAD: Solo recibe los datos del header 
+- POST: Manda informacion al servidor
+- DELETE: Borra un recurso en especifico
+- TRACE: Realizar pruebas de eco de mensajes en el camino que existe hacia un recurso.
+- PUT: Solicitar que el servidor almacene el cuerpo de la entidad en una ubicacion especifica dada por la URL.
+- OPTIONS: Representa una solicitud de los metodos de comunicacion disponibles en el canal de solicitud/respuesta identificada por el request-uri.
+
+## Tipos de respuesta HHTP
+- (100 - 199): Respuestas informativas
+    * 100: Continue
+- (200 - 299): Respuestas satisfactorias
+    * 200: OK
+    * 201: Created
+    * 202: Accepted
+    * 203: Non-Authoritative Information
+    * 204 Se devuelve JSON de todo OK pero no hay contenido
+- (300 - 399): Redirecciones
+- (400 - 499): Errores de los clientes
+    * 400: Bad Request
+    * 401: Anauthorized
+    * 403: El cliente no cuenta con los suficientes permisos 
+    * 404: Not Found
+    * 408: Request Timeout
+- (500 - 599): Errores de los servidores
+    * 500: Servidor no encontrado
+    * 503: Servicio Unavailable
+    * 511: Network Authentication Required: E codigo de estado 511 indica que el clinete necesita autenticar para ganar acceso a la red. 
+
 # REST Assured
-Es un framework escrito en Java y diseñado para simplificar las priebas sobre servicios basados en REST. Ofrece un DSL descriptivo, que muestra una unión a un punto de conexion HTTP y da los resultados esperados. Este framework soporta las operaciones POST, GET, PUT, DELETE, OPTIONS, PATCH y HEAD, contiene herramientas para invocarlas y verificarlas.
+Es un framework escrito en Java y diseñado para simplificar las pruebas sobre servicios basados en REST. Ofrece un DSL descriptivo, que muestra una unión a un punto de conexion HTTP y da los resultados esperados. Este framework soporta las operaciones POST, GET, PUT, DELETE, OPTIONS, PATCH y HEAD, contiene herramientas para invocarlas y verificarlas.
 
 - Se puede comprobar el estado del código, del mensaje e incluso, se puede ver el cuerpo de la respuesta. Ademas resulta muy facil concatenar llamadas y en todo momento se tiene el control del codigo.
 - Son faciles de integrar con pruebas de todo tipo: funcionales, unitarias. integradas, etc.
 - Codificado en Java e integrable con librerias como JUnit, TestNG o Maven.
 -Es posible ejecutar pruebas automatizadas de UI y no requiere herramientas externas para ejecutarse.
+
+
 
 [Reference](https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured)
 # Gherkin
