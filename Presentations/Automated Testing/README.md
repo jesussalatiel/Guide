@@ -31,6 +31,8 @@ Some automation Design Patterns
 [Cucumber](https://cucumber.io/)
 ## Jenkins
 [Jenkins](https://github.com/hoto/jenkinsfile-examples)
+Jenkins is an open source automation server. Jenkins manages and controls softtware delivery processes throughout the entire lifecycle, including build, document, test, package, stage, deployment, static code analysis and much more. You cant set up Jenkins to watch for any code changes in places like Github, Bitbucket or Gitlab and automatically do a build a with tools like Maven and Gradle. You can utilize container technology such as Docker and Kubernetes, initiate test and then take actions like rolling back or rolling forward in production. 
+
 ## UFT
 [UFT](https://www.guru99.com/quick-test-professional-qtp-tutorial.html)
 ## APPIUM

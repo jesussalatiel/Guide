@@ -79,6 +79,16 @@ Comprobaciones Generucas
 
 - tags = {“@gui“, “~@SmokeTest”, “~@RegressionTest”} ignora todos los escenarios bajo el tag @SmokeTest y @RegressionTest pero ejecuta todos los que estén bajo el tag “@gui”, si seguimos el ejemplo es como ejecutar todos los escenarios de la feature que no estén bajo ningún otro tag.
 
+
+1. url : Defines the URL which we want to hit and get some data. Asterisk (*) means that this URL will be used in all the requests in the particular feature file.
+2. def: Defines the values of the variables.
+3. path : It defines the path of the URL. So, if you are using same base URL but are required to hit multiple endpoints to can use this feature.
+4. method : It defines the type of HTTP method which is to be used in the request.
+5. status : It is the expected status code from the service. It validates that the service returns the correct status code in response.
+6. print : It is used to print the response body of the request.
+7. match : Is is used for asserting values on the response body.
+8. $ : Denotes response body.
+
 [Documentation](https://github.com/intuit/karate)
 [Documentation](https://www.sngular.com/es/automatizacion-de-pruebas-con-karate-i/)
 
