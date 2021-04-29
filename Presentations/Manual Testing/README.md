@@ -154,6 +154,15 @@ Is a process where data sets coming from different sources are combined.
 - BDD: Behavior Driven Development
 - TDD: Test Driven Development 
 
+# Smoke vs Regression vs Integration testing
+
+- Smoke Testing: Is one of the earliest testing techniques performed over initial or newly developed builds to evaluate their stability based on the compliance of basic functionalities and features.
+- Integration Testing: Testing performed to expose defects in the interface and in the interactions betweem integrated components or system.
+- Regression Testing: Ensure that exixting core functionalities are not impacted or affected after each modification or changes introduced in the software application
+
+# Differences on the content of a test plan on a waterfall project and on an agile project
+- Test plan on waterfall: Detailed scope based on requeriments of the entire project.
+- Test plan on agile: Scope defined as a general overview of each user story per sprint.
 # Keywords
 - Test Analysis
 - Test Execution Schedule

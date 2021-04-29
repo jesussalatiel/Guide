@@ -1,5 +1,3 @@
-# Topics pendients to learn 
-
 # Automation Testing Design Pattern 
 [Design Patterns Important](https://www.devbridge.com/articles/top-design-pattern-test-automation-frameworks/)
 Is simply a solution that has shown to be successful again and again. Design patterns provide a general reusable solution for the common problems that occur on software design. Design Patterns are like collections 
@@ -18,20 +16,36 @@ It's importantto become familiar with SOLID Principles that help make software d
 
 Some automation Design Patterns
 
-* POM
+* POM (Page - Object - Model): Create Object Repository for web UI elements. The advantage of the model is that it reduces code duplication and improves test maintenance.
 * Facade: Is mostly used to combine a few page objects/actions and provide uniform actions for consumers, For example, when a complex API needs to be executed in a specific order, create a facade for the designated functionality and provide a simplified interface for operating.
-* Decorator 
-* Singleton
-
-
+* Decorator: Add responsabilities to object dinamically
+* Bridge: Separates an object's interfaces from its implementation
+* Adapter: Match interfaces of different classes
 
 ## Java OPP
 [Java](https://beginnersbook.com/2013/04/oops-concepts/)
+
+- Modifiers: It is used to set the access level for classes, attributes, methods and cnstructors.
+- Encapsulation: Is to make sure that "sensitive" data is hidden from users you declare attributees as private and you can access to them with get and set methods.
+- Abstraction: Is a process where you show only "Relevant" data and "Hide" unnecesary details of an object from the user.
+- Inheritance (Extends): The process by which one class acquires the properties and functionalities of another class os called inheritance. 
+- Polymorphism (Abstract -> @Override and Extends):  Allows us to perform a single action in different ways.
+- Interfaces (Implements): Iterfaces can contain only constants and abstract methods(methods with only signatures no body). Like abstract classes, interfaces cannot be instantiated, they can only be implemented by classes or extedns by other interfaces.
+
 ## Cucumber
 [Cucumber](https://cucumber.io/)
 ## Jenkins
 [Jenkins](https://github.com/hoto/jenkinsfile-examples)
-Jenkins is an open source automation server. Jenkins manages and controls softtware delivery processes throughout the entire lifecycle, including build, document, test, package, stage, deployment, static code analysis and much more. You cant set up Jenkins to watch for any code changes in places like Github, Bitbucket or Gitlab and automatically do a build a with tools like Maven and Gradle. You can utilize container technology such as Docker and Kubernetes, initiate test and then take actions like rolling back or rolling forward in production. 
+ -is an open source automation server. Jenkins manages and controls softtware delivery processes throughout the entire lifecycle, including build, document, test, package, stage, deployment, static code analysis and much more. You cant set up Jenkins to watch for any code changes in places like Github, Bitbucket or Gitlab and automatically do a build a with tools like Maven and Gradle. You can utilize container technology such as Docker and Kubernetes, initiate test and then take actions like rolling back or rolling forward in production. It is written entirely in Java.
+
+Some of the possible steps that can be performed using Jenkins
+* Software build using build systems such as Gradle, Maven and more-
+* Automation testing using test frameworks such as Nose2, PyTest, Robot, Selenium and more.
+* Execute test scripts (using Windows terminal, Linux shellm etc)
+* Achieve test results and perform post actions such as printing test reports, and more.
+* Execute test scenarios against different input combinations for obtaining improved test coverage.
+* Continuous Integration (CI) where the artifacts are automatically created and tested. This aids in identification of issues in the product at an early stage of development.
+
 
 ## UFT
 [UFT](https://www.guru99.com/quick-test-professional-qtp-tutorial.html)
@@ -65,10 +79,13 @@ Please make sure to update tests as appropriate.
 ## JIRA
 # Xray Test Management 
 
+# Differences between Cookies and Cache
+- Cookies are small files that contain: Password, Preferences, IP Address, date, etc is focus in the client
+- Cache: Is just a collection of data downloaded to help display a web page.
 
-
-
-
+# Difference between Relative and Absolute path
+- Relative: Starts with a double slash(//)
+- Absolute: Starts with a single slash(/), contains absolute path from the root element
 ## XPath
 [Tutorial](https://www.youtube.com/watch?v=NhG__BL8zFo)
 - //table[@id='table1']//tr[last()-4]/td[input]
