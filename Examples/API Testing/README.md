@@ -13,6 +13,32 @@ Es un framework escrito en Java y diseñado para simplificar las priebas sobre s
 - Codificado en Java e integrable con librerias como JUnit, TestNG o Maven.
 -Es posible ejecutar pruebas automatizadas de UI y no requiere herramientas externas para ejecutarse.
 
+The primary keywords are:
+- Given
+- When
+- Get
+- Then 
+```java
+    @Test
+    public void test() {
+
+		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
+		System.out.println(response.statusCode());
+		System.out.println(response.asString());
+		System.out.println(response.getBody().asString());
+		System.out.println(response.statusLine());
+
+		int statusCode = response.getStatusCode();
+		Assert.assertEquals(statusCode, 200);
+
+	}
+
+	@Test
+	public void test1() {
+		given().get("https://reqres.in/api/users?page=2").then().statusCode(200).body("data.id[1]", equalTo(8))
+				.body("data.first_name", hasItems("Michael", "Lindsay")).log().all();
+	}
+```
 [Reference](https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured)
 # Gherkin
 Describe business behavior without goig into detail of implementation. It uses plain language to describe uses cases and allows users to remove logic details from behavior test. A gherkin document has an extension ".feature" and simply just a test file with a fancy extension. Cucumber reads Gherkins document and executes a test to validate that the software behaves as per the Gherkin syntax.
@@ -104,3 +130,73 @@ Es una estrategia de desarrollo, cucumber "obliga" a documentar las pruebas auto
 [](https://www.udemy.com/course/a4q-selenium-practice-exam-foundation-eng/)
 
 [Creator Karate Test](https://hackernoon.com/the-world-needs-an-alternative-to-selenium-so-we-built-one-zrk3j3nyr)
+
+# ITestListener
+Listener is defined as interface that modifies the default TestNG's behavior. As the name suggests Listeners "listen" to the event defined in the selenium script and behave accordingly. It is used in selenium by implementing Listeners Interface. It allows customizing TestNG reports or logs. There are many types of TestNG listeners available.
+
+Below are the few TestNG listeners:
+
+1. IAnnotationTransformer ,
+2. IAnnotationTransformer2 ,
+3. IConfigurable ,
+4. IConfigurationListener ,
+5. IExecutionListener,
+6. IHookable ,
+7. IInvokedMethodListener ,
+8. IInvokedMethodListener2 ,
+9. IMethodInterceptor ,
+10. IReporter,
+11. ISuiteListener,
+12. ITestListener .
+
+## ITestListener has following methods
+1. OnStart- OnStart method is called when any Test starts.
+2. onTestSuccess- onTestSuccess method is called on the success of any Test.
+3. onTestFailure- onTestFailure method is called on the failure of any Test.
+4. onTestSkipped- onTestSkipped method is called on skipped of any Test.
+5. onTestFailedButWithinSuccessPercentage- method is called each time Test fails  but is within success percentage.
+6. onFinish- onFinish method is called after all Tests are executed.
+```java
+public class ListenersTestNG implements ITestListener, IInvokedMethodListener {
+
+	public void onStart(ITestContext context) {
+		System.out.println("onStart method started");
+	}
+
+	public void onFinish(ITestContext context) {
+		System.out.println("onFinish method started");
+	}
+
+	public void onTestStart(ITestResult result) {
+		System.out.println("New Test Started " + "[ " + result.getName() + " ]");
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		System.out.println("onTestSuccess Method " + "[ " + result.getName() + " ]");
+	}
+
+	public void onTestFailure(ITestResult result) {
+		System.out.println("onTestFailure Method " + "[ " + result.getName() + " ]");
+	}
+
+	public void onTestSkipped(ITestResult result) {
+		System.out.println("onTestSkipped Method " + "[ " + result.getName() + " ]");
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		System.out.println("onTestFailedButWithinSuccessPercentage " + "[ " + result.getName() + " ]");
+	}
+
+	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+
+		System.out.println("Before Invocation Method Started For: " + "{ " + method.getTestMethod().getMethodName()
+				+ "of Class:" + testResult.getTestClass() + " }");
+	}
+
+	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
+
+		System.out.println("After Invocation Method Started For: " + "{[ " + method.getTestMethod().getMethodName()
+				+ "of Class:" + testResult.getTestClass() + " }");
+
+	}
+```
