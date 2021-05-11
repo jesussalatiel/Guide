@@ -39,6 +39,46 @@ The primary keywords are:
 				.body("data.first_name", hasItems("Michael", "Lindsay")).log().all();
 	}
 ```
+
+# Hamcrest
+Is a framework that assist writing software test in the java programming language. It supports creating customized assertions matchers, allowing match rules to be defined declaratively.
+```java
+@Test
+public void givenBean_whenHasValue_thenCorrect() {
+    Person person = new Person("Baeldung", 25);
+    assertThat(person, hasProperty("name"));
+
+@Test
+public void givenBean_whenHasCorrectValue_thenCorrect() {
+    Person person = new Person("Baeldung", "New York");
+    assertThat(person, hasProperty("address", equalTo("New York")));
+}
+@Test
+public void givenCollection_whenEmpty_thenCorrect() {
+    List<String> emptyList = new ArrayList<>();
+    assertThat(emptyList, empty());
+}
+@Test
+public void givenAList_whenChecksSize_thenCorrect() {
+    List<String> hamcrestMatchers = Arrays.asList(
+      "collections", "beans", "text", "number");
+    assertThat(hamcrestMatchers, hasSize(4));
+}
+@Test
+public void givenAListAndValues_whenChecksListForGivenValues_thenCorrect() {
+    List<String> hamcrestMatchers = Arrays.asList(
+      "collections", "beans", "text", "number");
+
+    assertThat(hamcrestMatchers,
+    containsInAnyOrder("beans", "text", "collections", "number"));
+
+	assertThat(hamcrestMatchers,
+    contains("collections", "beans", "text", "number"));
+}
+}
+```
+[Hamcrest](https://www.baeldung.com/java-junit-hamcrest-guide)
+
 [Reference](https://www.sdos.es/blog/descubre-como-automatizar-service-tests-con-rest-assured)
 # Gherkin
 Describe business behavior without goig into detail of implementation. It uses plain language to describe uses cases and allows users to remove logic details from behavior test. A gherkin document has an extension ".feature" and simply just a test file with a fancy extension. Cucumber reads Gherkins document and executes a test to validate that the software behaves as per the Gherkin syntax.
@@ -78,7 +118,7 @@ Keywords:
 - match !=
 - match contains, match contains only, match contains any y match !contains
 
-Comprobaciones Generucas
+Comprobaciones Genericas
 - @ :      Ignora el campo.
 - @null:           El valor debe ser nulo.
 - @notnull:    El valor no debe ser nulo.

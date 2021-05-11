@@ -5,7 +5,8 @@
     <classes>
       <class name="api.Test01_Get">
         <methods>
-          <include name="test1"/>
+          <include name="basicPing"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- api.Test01_Get -->
     </classes>

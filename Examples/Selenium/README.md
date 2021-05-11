@@ -76,6 +76,21 @@ Please make sure to update tests as appropriate.
 ## Performance Test
 [Performance Test](https://azure.microsoft.com/es-es/blog/performance-testing-with-app-service-continuous-deployment/)
 
+## Reporting 
+Extent Report is a library that can be used to build a customized detailed report. It can be integrated with TestNG, JUNIT etc. This report can be built in JAVA, .NET and it provides a detailed summary about each testcases and its each test steps too in graphical manner. The Extent Report library is paid library from version 4; However, it is a free source till the version Extent Report 3. Let us see how to build that report in JAVA. 
+
+
+
+- [Extent Reports](https://www.extentreports.com/docs/versions/5/java/index.html)
+- [Extent Reports](https://www.toolsqa.com/extent-report/extent-report-for-cucumber-testng-project/)
+- [Extent Reports](https://www.youtube.com/watch?v=Rduh69SfD4Q)
+- [Klov](https://www.extentreports.com/docs/versions/5/java/klov-reporter.html)
+
+Why Jenkins and Selenium ?
+* Running Selenium test in Jenkins allows you to run tests every time your software changes and deploy the software when the tests pass
+* Jenkins can schedule your tests to run at specific time
+* You can save the execution history and Test Reports
+* Jenkins supprts Maven for building and Testing a project in continuous integration.
 ## JIRA
 # Xray Test Management 
 
